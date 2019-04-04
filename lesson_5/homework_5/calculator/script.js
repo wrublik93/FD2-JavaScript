@@ -1,4 +1,8 @@
-var b = 0;
+var calcSum=0;
+var calcResidual=0;
+var calcMultiply=0;
+var calcSegment=0;
+var calcPoint=0;
 
 function numberZero() {
     document.getElementById('display').value += document.getElementById('zero').value;
@@ -41,39 +45,82 @@ function numberNine() {
 }
 
 function numberSum() {
-    document.getElementById('display').value += document.getElementById('sum').value;
-    b=b+parseInt(document.getElementById('display').value,10);
-    document.getElementById('display').value = b;
+    calcSum++;
+    calcResidual++;
+    calcMultiply++;
+    calcSegment++;
+    calcPoint=0;
+    if (calcSum === 1) {
+        document.getElementById('display').value += document.getElementById('sum').value;
+    }
 }
 
 function numberResidual() {
-    document.getElementById('display').value += document.getElementById('residual').value;
+    calcSum++;
+    calcResidual++;
+    calcMultiply++;
+    calcSegment++;
+    calcPoint=0;
+    if (calcSum === 1) {
+        document.getElementById('display').value += document.getElementById('residual').value;
+    }
 }
 
 function numberMultiply() {
-    document.getElementById('display').value += document.getElementById('multiply').value;
+    calcSum++;
+    calcResidual++;
+    calcMultiply++;
+    calcSegment++;
+    calcPoint=0;
+    if (calcSum === 1) {
+        document.getElementById('display').value += document.getElementById('multiply').value;
+    }
 }
 
 function numberSegment() {
-    document.getElementById('display').value += document.getElementById('segment').value;
+    calcSum++;
+    calcResidual++;
+    calcMultiply++;
+    calcSegment++;
+    calcPoint=0;
+    if (calcSum === 1) {
+        document.getElementById('display').value += document.getElementById('segment').value;
+    }
 }
 
 function numberPoint() {
-    document.getElementById('display').value += document.getElementById('point').value;
+    calcPoint++;
+    if (calcPoint === 1) {
+        document.getElementById('display').value += document.getElementById('point').value;
+    }
+
 }
 
 function numberResult() {
-
+    calcSum=0;
+    calcResidual=0;
+    calcMultiply=0;
+    calcSegment=0;
+    calcPoint=0;
+    document.getElementById('display').value = eval(document.getElementById('display').value)
 }
 
 function numberClear() {
+    calcSum=0;
+    calcResidual=0;
+    calcMultiply=0;
+    calcSegment=0;
+    calcPoint=0;
     document.getElementById('display').value = '';
-    b=0;
-
 }
 
 function numberSave() {
-    localStorage.setItem('Последнее полученное значение:', document.getElementById('display').value)
+    localStorage.setItem('Результат последнего вычисления равен:', document.getElementById('display').value)
 }
+
+
+
+
+
 
 
