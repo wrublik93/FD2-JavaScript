@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="mainPage">
+    <div class="calculator">
+        <div class="numbers">
+            <div class="calculator__row">
+                <input class="calculator__display" id="display" type="text" disabled/>
+            </div>
+            <div class="calculator_row">
+                <input type="button" value="C" id="clear" class="calculator__key" onclick="numberClear()">
+                <input type="button" value="Save" id="save" class="calculator__key" onclick="numberSave()">
+            </div>
+            <div class="calculator_row">
+                <input type="button" value="7" id="seven" class="calculator__key" onclick="numberSeven()">
+                <input type="button" value="8" id="eight" class="calculator__key" onclick="numberEight()">
+                <input type="button" value="9" id="nine" class="calculator__key" onclick="numberNine()">
+                <input type="button" value="-" id="residual" class="calculator__key" onclick="numberResidual()">
+            </div>
+            <div class="calculator_row">
+                <input type="button" value="4" id="four" class="calculator__key" onclick="numberFour()">
+                <input type="button" value="5" id="five" class="calculator__key" onclick="numberFive()">
+                <input type="button" value="6" id="six" class="calculator__key" onclick="numberSix()">
+                <input type="button" value="+" id="sum" class="calculator__key" onclick="numberSum()">
+            </div>
+            <div class="calculator_row">
+                <input type="button" value="1" id="one" class="calculator__key" onclick="numberOne()">
+                <input type="button" value="2" id="two" class="calculator__key" onclick="numberTwo()">
+                <input type="button" value="3" id="three" class="calculator__key" onclick="numberThree()">
+                <input type="button" value="*" id="multiply" class="calculator__key" onclick="numberMultiply()">
+            </div>
+            <div class="calculator_row">
+                <input type="button" value="0" id="zero" class="calculator__key" onclick="numberZero()">
+                <input type="button" value="." id="point" class="calculator__key" onclick="numberPoint()">
+                <input type="button" value="=" id="result" class="calculator__key" onclick="numberResult()">
+                <input type="button" value="/" id="segment" class="calculator__key" onclick="numberSegment()">
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
