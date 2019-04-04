@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Triangle</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script src="script.js" type="application/javascript"></script>
+<div class="mainPage">
+    <div class="triangle">
+        <div class="calculatorLine">
+            <label>
+                Введите сторону a:
+                <input type="text" id="sideA">
+            </label>
+        </div>
+        <div class="calculatorLine">
+            <label>
+                Введите сторону b:
+                <input type="text" id="sideB">
+            </label>
+        </div>
+        <div class="calculatorLine">
+            <label>
+                Введите сторону c:
+                <input type="text" id="sideC">
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="button" value="Узнать результат" onclick="triangle(x, y, z)">
+            </label>
+        </div>
+        <div>
+            Результат в консоле
+        </div>
+    </div>
+</div>
+<script src="./script.js" type="application/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: calc(100vh);
+    width: 100%;
+    background: linear-gradient(47.41deg, #0066B0 0.46%, rgba(130, 212, 197, 0) 100%), radial-gradient(1848.24px at 100% 0%, #6244B8 0%, rgba(64, 35, 126, 0) 100%), radial-gradient(2388.70px at 130.06% 52.06%, #00F0FF 0%, rgba(76, 44, 145, 0) 100%);
+}
+
+.triangle {
+    width: 270px;
+    height: 200px;
+    border: 2px solid tan;
+    margin: 100px auto 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: tan;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculatorLine {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
